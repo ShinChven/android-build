@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  build-task:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: shinchven/android-build:28
