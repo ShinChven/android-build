@@ -1,6 +1,6 @@
 # android-build
 
-A docker image for android build environment
+A docker image of android build environment
 
 ## use
 
