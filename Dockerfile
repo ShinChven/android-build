@@ -1,9 +1,10 @@
 FROM openjdk:8
 
-ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-3859397.zip" \
+# VERSIONS
+ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
     ANDROID_HOME="/usr/local/android-sdk" \
-    ANDROID_VERSION=28 \
-    ANDROID_BUILD_TOOLS_VERSION=28.0.2
+    ANDROID_VERSION=29 \
+    ANDROID_BUILD_TOOLS_VERSION=29.0.2
 
 # Download Android SDK
 RUN mkdir "$ANDROID_HOME" .android \
