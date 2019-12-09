@@ -1,6 +1,7 @@
 # android-build
 
-A docker image of android build environment
+- A docker image of android build environment;
+- NDK bundled;
 
 ## use
 
