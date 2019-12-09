@@ -20,4 +20,5 @@ RUN mkdir "$ANDROID_HOME" .android \
     "platforms;android-${ANDROID_VERSION}" \
     "platform-tools" "ndk-bundle" \
 && mkdir /application
+
 WORKDIR /application
