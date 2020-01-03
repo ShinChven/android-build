@@ -3,7 +3,7 @@ FROM ubuntu:bionic
 MAINTAINER shinchven@gmail.com
 
 ## Install openjdk and other tools
-RUN apt-get update && apt-get upgrade -y && apt-get git install openjdk-8-jdk curl unzip -y
+RUN apt-get update && apt-get upgrade -y && apt-get install git openjdk-8-jdk curl unzip -y
 
 # VERSIONS
 ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
