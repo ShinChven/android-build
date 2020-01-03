@@ -1,7 +1,8 @@
 # android-build
 
-- A docker image of android build environment;
+- A docker image of android build environment based on ubuntu:bionic;
 - NDK bundled;
+- git installed;
 
 ## use
 
