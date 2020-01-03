@@ -1,4 +1,9 @@
-FROM openjdk:8
+FROM ubuntu:bionic
+
+MAINTAINER shinchven@gmail.com
+
+## Install openjdk and other tools
+RUN apt-get update && apt-get upgrade -y && apt-get git install openjdk-8-jdk curl unzip -y
 
 # VERSIONS
 ENV SDK_URL="https://dl.google.com/android/repository/sdk-tools-linux-4333796.zip" \
@@ -18,7 +23,8 @@ RUN mkdir "$ANDROID_HOME" .android \
 && $ANDROID_HOME/tools/bin/sdkmanager --update \
 && $ANDROID_HOME/tools/bin/sdkmanager "build-tools;${ANDROID_BUILD_TOOLS_VERSION}" \
     "platforms;android-${ANDROID_VERSION}" \
-    "platform-tools" "ndk-bundle" \
+    "platform-tools" \
+    "ndk-bundle" \
 && mkdir /application
 
 WORKDIR /application
