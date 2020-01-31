@@ -1,4 +1,4 @@
-# android-build
+# android building env contained
 
 - A docker image of android build environment based on ubuntu:bionic;
 - NDK bundled;
